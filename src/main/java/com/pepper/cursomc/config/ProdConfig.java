@@ -13,8 +13,8 @@ import com.pepper.cursomc.services.EmailService;
 import com.pepper.cursomc.services.SmtpEmailService;
 
 @Configuration
-@Profile("dev")
-public class DevConfig {
+@Profile("prod")
+public class ProdConfig {
 
 	@Autowired
 	private DBService dbService;
