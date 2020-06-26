@@ -56,8 +56,6 @@ public class Cliente implements Serializable {
 	@CollectionTable(name="PERFIS")
 	private Set<Integer> perfis = new HashSet<>();
 	
-	private String imagemUrl;
-	
 	public Cliente() {
 		addPerfil(Perfil.CLIENTE);
 	}
@@ -182,13 +180,5 @@ public class Cliente implements Serializable {
 	public String toString() {
 		return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", cpfOuCnpj=" + cpfOuCnpj + ", tipo="
 				+ tipo + ", enderecos=" + enderecos + ", telefones=" + telefones + "]";
-	}
-
-	public String getImagemUrl() {
-		return imagemUrl;
-	}
-
-	public void setImagemUrl(String imagemUrl) {
-		this.imagemUrl = imagemUrl;
 	}
 }
